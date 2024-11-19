@@ -13,7 +13,7 @@ def load_model_from_path(path):
         st.error(f"Error loading model: {e}")
         return None
 
-model = load_model_from_path('cnn_model.h5')
+model = load_model_from_path('cnn_model_updated.h5')
 
 # Define the class names
 class_names = ['malignant','benign']
