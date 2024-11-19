@@ -42,7 +42,8 @@ if uploaded_file is not None:
     if model:
         predictions = model.predict(img_array)
         predicted_class_idx = np.argmax(predictions, axis=-1)
-        predicted_class = class_names[predicted_class_idx[0]]
-        
-        # Display the predicted category
+        if predicted_class_idx[0] == 0:
+            predicted_class = class_names[1]  
+        else:
+            predicted_class = class_names[0]
         st.write(f"Prediction: {predicted_class}")
