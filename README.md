@@ -1,6 +1,6 @@
 # Cancer-Detection-Using-CNN
 
-![My Image](images/model summary.png "Model Summary")
+![My Image](images/model-summary.png "Model Summary")
 
 This project employs a deep learning model to detect melanoma by distinguishing between malignant and benign. The Convolutional Neural Network (CNN) achieves 92.5% accuracy, evidencing its reliability.
 
