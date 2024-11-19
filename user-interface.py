@@ -1,5 +1,4 @@
 import streamlit as st
-import tensorflow as tf
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import numpy as np
@@ -21,7 +20,9 @@ class_names = ['malignant','benign']
 
 # Define a function to preprocess the image
 def preprocess_image(img):
-    image_array = tf.image.resize(image, (256, 256))
+    img = img.resize((256, 256))  # Resize image to match model's expected input size
+    img_array = np.array(img) / 255.0  # Convert to array and normalize
+    img_array = np.expand_dims(img_array, axis=0)  # Add batch dimension
     return img_array
 
 # Streamlit app
