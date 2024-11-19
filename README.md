@@ -10,4 +10,6 @@ This project employs a deep learning model to detect melanoma by distinguishing 
 - **Objective:** Improve early melanoma detection through automation.
 - **Model:** A fine-tuned CNN specifically for dermoscopic image classification. It contains 5 layers shown in image above.
 - **Performance:** Achieves **92.5% accuracy**.
+-**User-Interface** Making it easier to test the model
+![My Image](images/ui.png "User Interface")
 
